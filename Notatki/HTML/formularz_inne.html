@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Walidacja</p>
+    <form action="cos.php" method="post">
+        <label> Podaj wiek
+            <input type="number" id="num"> <button id="myButton">Wyślij</button>
+        </label>
+    </form>
+    <p id="info"></p>
+
+
+    <script>
+        document.querySelector("#myButton").addEventListener("click",function(e){
+            e.preventDefault();
+            const MIN=0; const MAX=10; var result;
+            var number=document.querySelector("#num").value;
+            if(number!="" && number>=MIN && number<=MAX){
+                result="Dane poprawne";
+            }else{
+                result="Dane niepoprawne";
+                document.querySelector(#info).innerHTML=result;
+            }
+            document.querySelector(#info).innerHTML=result;
+        });
+    </script>
+</body>
+</html>
