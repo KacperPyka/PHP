@@ -16,7 +16,7 @@ function sendMessage() {
     const chat = document.querySelector('#chat');
     const newMessage = document.createElement('div');
     newMessage.classList.add('message', 'jolanta');
-    newMessage.innerHTML = "<img src='jolka1.jpg' alt='Jolanta Nowak'><p>" + messageText + "</p>";
+    newMessage.innerHTML = "<img src='jolka.jpg' alt='Jolanta Nowak'><p>" + messageText + "</p>";
     chat.appendChild(newMessage);
     newMessage.scrollIntoView();
     messageInput.value = '';
@@ -28,7 +28,8 @@ function generateRandomReply() {
     const chat = document.querySelector('#chat');
     const newMessage = document.createElement('div');
     newMessage.classList.add('message', 'krzysztof');
-    newMessage.innerHTML = "<img src='Krzysiek1.jpg' alt='Krzysztof Łukasiński'><p>" + replyText + "</p>";
+    newMessage.innerHTML = "<img src='Krzysiek.jpg' alt='Krzysztof Łukasiński'><p>" + replyText + "</p>";
     chat.appendChild(newMessage);
     newMessage.scrollIntoView();
 }
+
